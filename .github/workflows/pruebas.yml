@@ -25,7 +25,7 @@ jobs:
       - name: Construyendo el artefacto (.jar)
         run: |
           chmod +x gradlew        
-          ./gradlew build
+          ./gradlew assemble
 
   Test:
       runs-on: ubuntu-latest
