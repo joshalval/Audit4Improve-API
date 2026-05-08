@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Bienvenida al Issue
         if: github.event_name == 'issues'
-        run: echo "Se ha detectado actividad en el Issue #${{ github.event.issue.number }}"
+        run: echo "Se ha detectado actividad en el Issue ${{ github.event.issue.number }}"
 
       - name: Añadir etiqueta automática
         if: github.event.action == 'opened'
